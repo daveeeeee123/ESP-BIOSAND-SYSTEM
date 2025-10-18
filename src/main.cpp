@@ -61,7 +61,7 @@ digitalWrite(LED_BUILTIN, WiFi.status() == WL_CONNECTED);
     Serial.println(" L/min");
 
     if (flowRate < FLOW_THRESHOLD) {
-      Serial.println("⚠️ ALERT: Water flow below 1 L/min!");
+      Serial.println("ALERT: Water flow below 1 L/min!");
       // You can also trigger LED/Buzzer/Send to Firebase here
     } else {
       Serial.println("✅ Flow is good.");
